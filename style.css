@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #632104;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.brief{
+    display: flex;
+    justify-content: center;
+    background-image: url(img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.brief__text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100rem;
+    font-family: "Birthstone Bounce", cursive;
+}
+
+.brief__text__title{
+    font-size: 6rem;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.brief__text{
+    font-size: 3.6rem;
+    line-height: 200%;
+}
+
+.highlight{
+    font-weight: 500;
+    font-size: 4.6rem;
+    animation: highlight 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes highlight {
+    0% { transform: translate(0px, 5px);
+    }
+    
+    20%{ transform: translate(0px, 0px); 
+    }
+
+    40% { transform: translate(0px, 5px);
+    }
+    
+    60%{ transform: translate(0px, 0px); 
+    }
+
+    80% { transform: translate(0px, 5px);
+    }
+    
+    100%{ transform: translate(0px, 0px); 
+    }
+}
