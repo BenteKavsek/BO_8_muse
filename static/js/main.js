@@ -1,34 +1,42 @@
-let popups = document.getElementsByClassName("popup");
-console.log(popups);
+const popups = document.getElementById("parent__popup");
 
-for(let i = 0; i < switches.length; i++){
-    switches[i].onclick = function(){
-        for(let i = 0; i < switches.length; i++){
-            switches[i].style.display = "none";
-        }
-        switch(this.dataset.switch){
-            case "lightblue":
-                document.getElementById("js--blue").style.display = "grid";
-                break;
-            case "yellow":
-                document.getElementById("js--yellow").style.display = "grid";
-                break;
-            case "gray":
-                document.getElementById("js--gray").style.display = "grid";
-                break;
-            case "pink":
-                document.getElementById("js--pink").style.display = "grid";
-                break; 
-        }
-    }
+const schip_button = document.getElementById("schip_button");
+const schip_card = document.getElementById("schip-t-wapen");
+const amsterdam_button = document.getElementById("amsterdam__button");
+const amsterdam_card = document.getElementById("amsterdam");
+const mau__button = document.getElementById("mauritius");
+const mau = document.getElementById("rivier-mauritius");
+
+function clearall() {
+
 }
 
-let closeButtons = document.getElementsByClassName("productModal__close");
-for(let i = 0; i < closeButtons.length; i++){
-    closeButtons[i].onclick = function(){
-        this.parentNode.style.display = "none";
-        for(let i = 0; i < switches.length; i++){
-            switches[i].style.display = "block";
-        }
-    }
-}
+schip_button.addEventListener("click", function () {
+    console.log("foo");
+    popups.style.display = "flex"
+    schip_card.style.display = "flex"
+    amsterdam.style.display = ""
+    mau.style.display = ""
+})
+
+
+amsterdam_button.addEventListener("click", function () {
+    console.log("foo1");
+    popups.style.display = "flex"
+    amsterdam_card.style.display = "flex"
+    schip_card.style.display = ""
+    mau.style.display = ""
+    //Hier moet volgorde display nog goed
+
+})
+
+
+mau__button.addEventListener("click", function () {
+    console.log("foo2");
+    popups.style.display = "flex"
+    mau.style.display = "flex"
+    amsterdam.style.display = ""
+    schip__card.style.display = ""
+})
+
+

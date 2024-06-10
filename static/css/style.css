@@ -19,6 +19,7 @@ html {
     justify-content: center;
     background-color: lightcoral;
     color: #632104;
+    position: relative;
 }
 
 .brief__text {
@@ -49,10 +50,16 @@ html {
 }
 
 @keyframes highlight {
-    0%, 40%, 80% {
+
+    0%,
+    40%,
+    80% {
         color: rgb(0, 0, 139);
     }
-    20%, 60%, 100% {
+
+    20%,
+    60%,
+    100% {
         color: rgb(0, 0, 0);
     }
 
@@ -61,35 +68,37 @@ html {
 
 /* POPUP */
 
-.popups{
+.popup__collection {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 80vh;
 }
 
-.popup{
+.popup {
     width: 70vw;
     height: 40vh;
     display: flex;
     color: black;
     border: 1px solid black;
+    background-color: red;
 }
 
-.popup__figure{
+.popup__figure {
     padding: 2rem;
     width: 40%;
 }
 
-.popup__img{
-    background-color:  rgb(0, 0, 139);
+.popup__img {
+    background-color: rgb(0, 0, 139);
     object-fit: contain;
     height: 100%;
     width: 100%;
 }
 
-.popup__text{
-    display: flex;
+.popup__text {
+    display: none;
     flex-direction: column;
     padding: 2rem;
     width: 60%;
@@ -97,19 +106,31 @@ html {
     gap: 1.4rem;
 }
 
-.popup__title{
+.popup__title {
     font-family: "Birthstone Bounce";
     font-size: 5rem;
     font-weight: 500;
 }
 
-.close-button{
+.close-button {
     margin: 2rem;
     border-radius: 50%;
     height: 5rem;
     width: 5rem;
     font-size: 3rem;
-    background:  white(0, 0, 139);
-    color:  rgb(0, 0, 139);
-    border: 2px solid  rgb(0, 0, 139);
+    background: white(0, 0, 139);
+    color: rgb(0, 0, 139);
+    border: 2px solid rgb(0, 0, 139);
+}
+
+#schip-t-wapen {
+    display: none;
+}
+
+#amsterdam {
+    display: none;
+}
+
+#rivier-mauritius {
+    display: none;
 }
