@@ -1,4 +1,6 @@
 const popups = document.getElementById("parent__popup");
+const brief = document.getElementById("brief");
+console.log(brief)
 
 const schip_button = document.getElementById("schip_button");
 const schip_card = document.getElementById("schip_wapen");
@@ -34,47 +36,56 @@ function clearall() {
     gulden_card.style.display = ""
     lading_card.style.display = ""
     ossenhuid_card.style.display = ""
+    brief.style.opacity = "1";
 };
 
 clearall();
 
 schip_button.addEventListener("click", function () {
     clearall();
+    brief.style.opacity = "0.75";
     schip_card.style.display = "flex";
 })
 
 amsterdam_button.addEventListener("click", function () {
     clearall()
+    brief.style.opacity = "0.75";
     amsterdam_card.style.display = "flex";
 })
 
 mau_button.addEventListener("click", function () {
     clearall()
+    brief.style.opacity = "0.75";
     mau_card.style.display = "flex";
 })
 
 eiland_button.addEventListener("click", function () {
     clearall()
+    brief.style.opacity = "0.75";
     eiland_card.style.display = "flex";
 })
 
 wilden_button.addEventListener("click", function () {
     clearall()
+    brief.style.opacity = "0.75";
     wilden_card.style.display = "flex";
 })
 
 gulden_button.addEventListener("click", function () {
     clearall()
+    brief.style.opacity = "0.75";
     gulden_card.style.display = "flex";
 })
 
 lading_button.addEventListener("click", function () {
     clearall()
+    brief.style.opacity = "0.75";
     lading_card.style.display = "flex";
 })
 
 ossenhuid_button.addEventListener("click", function () {
     clearall()
+    brief.style.opacity = "0.75";
     ossenhuid_card.style.display = "flex";
 })
 
@@ -83,6 +94,10 @@ ossenhuid_button.addEventListener("click", function () {
 const closeButton = document.getElementsByClassName("close-button");
 console.log(closeButton);
 
-closeButton.addEventListener("click", function () {
-    clearall;
-})
+const closeButtons = document.getElementsByClassName("close-button");
+
+for (let i = 0; i < closeButtons.length; i++) {
+    closeButtons[i].addEventListener("click", function () {
+        clearall();
+    });
+}
