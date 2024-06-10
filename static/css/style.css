@@ -77,12 +77,12 @@ html {
 }
 
 .popup {
+    top: 20rem;
     width: 70vw;
-    height: 40vh;
-    display: flex;
+    display: none;
     color: black;
     border: 1px solid black;
-    background-color: red;
+    z-index: 1;
 }
 
 .popup__figure {
@@ -98,7 +98,6 @@ html {
 }
 
 .popup__text {
-    display: none;
     flex-direction: column;
     padding: 2rem;
     width: 60%;
@@ -121,16 +120,4 @@ html {
     background: white(0, 0, 139);
     color: rgb(0, 0, 139);
     border: 2px solid rgb(0, 0, 139);
-}
-
-#schip-t-wapen {
-    display: none;
-}
-
-#amsterdam {
-    display: none;
-}
-
-#rivier-mauritius {
-    display: none;
 }
