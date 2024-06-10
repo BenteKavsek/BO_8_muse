@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Wereld</title>
+    <script src="js/aframe.min.js"></script>
+    <script src="js/models.js" defer></script>
+</head>
+<body>
+    
+    <a-scene stats>
+
+        <a-sky color="lightblue"></a-sky>
+
+        <a-camera>
+            <a-cursor color="black"></a-cursor>
+        </a-camera>
+        
+        <a-plane rotation="-90 0 0" position="0 0 0" color="green" width="30" height="30"></a-plane>
+
+        
+        <a-entity gltf-model="models/Lenapehutjes.glb" position="-1 0 0"></a-entity>    
+
+    </a-scene>
+    
+</body>
+</html>

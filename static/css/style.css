@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #632104;
 }
 
 @font-face {
@@ -12,15 +11,14 @@
 
 html {
     font-size: 62.5%;
+    font-family: sans-serif;
 }
 
 .brief {
     display: flex;
     justify-content: center;
-    background-image: url(../img/background.jpg);
-    background-size: 120rem;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: lightcoral;
+    color: #632104;
 }
 
 .brief__text {
@@ -43,34 +41,75 @@ html {
 }
 
 .highlight {
+    color: blue;
     font-weight: 500;
     font-size: 4.6rem;
-    animation: highlight 2s;
-    animation-iteration-count: infinite;
+    animation: highlight 2s ease-in-out infinite;
+    text-decoration: none;
 }
 
 @keyframes highlight {
-    0% {
-        transform: translate(0px, 5px);
+    0%, 40%, 80% {
+        color: rgb(0, 0, 139);
+    }
+    20%, 60%, 100% {
+        color: rgb(0, 0, 0);
     }
 
-    20% {
-        transform: translate(0px, 0px);
-    }
+}
 
-    40% {
-        transform: translate(0px, 5px);
-    }
 
-    60% {
-        transform: translate(0px, 0px);
-    }
+/* POPUP */
 
-    80% {
-        transform: translate(0px, 5px);
-    }
+.popups{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
-    100% {
-        transform: translate(0px, 0px);
-    }
+.popup{
+    width: 70vw;
+    height: 40vh;
+    display: flex;
+    color: black;
+    border: 1px solid black;
+}
+
+.popup__figure{
+    padding: 2rem;
+    width: 40%;
+}
+
+.popup__img{
+    background-color:  rgb(0, 0, 139);
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.popup__text{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 60%;
+    font-size: 2rem;
+    gap: 1.4rem;
+}
+
+.popup__title{
+    font-family: "Birthstone Bounce";
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.close-button{
+    margin: 2rem;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    font-size: 3rem;
+    background:  white(0, 0, 139);
+    color:  rgb(0, 0, 139);
+    border: 2px solid  rgb(0, 0, 139);
 }
