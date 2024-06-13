@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +9,33 @@
     <script src="js/aframe.min.js"></script>
     <script src="js/models.js" defer></script>
 </head>
+
 <body>
-    
+
     <a-scene stats>
 
         <a-sky color="lightblue"></a-sky>
+        <a-entity camera look-controls position="4 1.5 -13"></a-entity>
 
-        <a-camera>
-            <a-cursor color="black"></a-cursor>
-        </a-camera>
-        
-        <a-plane rotation="-90 0 0" position="0 0 0" color="green" width="30" height="30"></a-plane>
+        <a-plane rotation="-90 0 0" position="0 0 -10" color="#006400" width="30" height="30"></a-plane>
 
-        
-        <a-entity gltf-model="models/Lenapehutjes.glb" position="-1 0 0"></a-entity>    
+        <a-entity gltf-model="models/hut_lenapen.glb" position="10 0 0"></a-entity>
+
+        <a-entity gltf-model="models/kookpot.glb" position="4 0 -11"></a-entity>
+
+        <a-entity gltf-model="models/tafel.glb" position="7 -0.5 -14"></a-entity>
+
+        <a-entity gltf-model="models/kaars.glb" position="7 1.1 -13"></a-entity>
+
+        <a-entity gltf-model="models/stoel.glb" position="7  -0.5 -14"></a-entity>
+
+        <a-entity gltf-model="models/kussens.glb" position="3 0 -15.3"></a-entity>
+
+        <a-entity gltf-model="models/kussens.glb" position="2 0 -15"></a-entity>
+
 
     </a-scene>
-    
+
 </body>
+
 </html>
