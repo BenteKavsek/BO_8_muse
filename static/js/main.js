@@ -90,7 +90,6 @@ ossenhuid_button.addEventListener("click", function () {
 })
 
 
-
 const closeButton = document.getElementsByClassName("close-button");
 console.log(closeButton);
 
