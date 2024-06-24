@@ -15,22 +15,27 @@ html {
     cursor: auto;
 }
 
+.background {
+    width: 99vw;
+    height: 99vh;
+    position: relative;
+}
+
 .brief {
-    padding: 3rem 0;
     display: flex;
     justify-content: center;
-    background-color: #d8a575;
     color: #4e1a03;
-    position: relative;
-    height: 100vh;
 }
 
 .brief__text {
-    height: 100%;
+    font-size: 3.4rem;
     display: flex;
     flex-direction: column;
-    width: 140rem;
+    width: 160rem;
     font-family: "Birthstone Bounce";
+    line-height: 200%;
+    position: absolute;
+    top: 12%;
 }
 
 .brief__text__title {
@@ -38,15 +43,10 @@ html {
     font-weight: 500;
 }
 
-.brief__text {
-    font-size: 3.6rem;
-    line-height: 200%;
-}
-
 .highlight {
     color: blue;
     font-weight: 500;
-    font-size: 4.6rem;
+    font-size: 3.6rem;
     animation: highlight 2s ease-in infinite;
     text-decoration: none;
     cursor: pointer;

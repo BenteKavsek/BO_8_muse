@@ -1,6 +1,5 @@
 const popups = document.getElementById("parent__popup");
 const brief = document.getElementById("brief");
-console.log(brief)
 
 const schip_button = document.getElementById("schip_button");
 const schip_card = document.getElementById("schip_wapen");
@@ -100,3 +99,8 @@ for (let i = 0; i < closeButtons.length; i++) {
         clearall();
     });
 }
+
+
+let vids = document.getElementsByTagName("video");
+
+for (let i = 0; i < vids.length; ++i) { vids[i].play() };
